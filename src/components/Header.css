@@ -20,8 +20,8 @@
 }
 .logo {
   font-size: 3.5rem;
-  font-weight: 400;
-  font-family: cursive;
+  font-weight: 700;
+  font-family: "Comic Neue", cursive;
 }
 .logo_red {
   color: var(--medium-pink);
