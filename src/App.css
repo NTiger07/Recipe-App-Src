@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-family: "Comic Neue", cursive;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --dark-gray: #231d21;
+  --medium-pink: #f9a5d7;
+  --light-pink: #f4b9d5;
+  --dull-pink: #fee3f4;
+  --light-blue: #6a7edf;
+  --dull-blue: #e5f1ff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  width: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--medium-pink);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  outline: none;
+  border: none;
+}
+.svgs {
+  width: 18px;
+  margin-right: 10px;
+}
+select {
+  border-radius: 4px;
+  background-color: var(--light-blue);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+}
+button {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.9);
 }
