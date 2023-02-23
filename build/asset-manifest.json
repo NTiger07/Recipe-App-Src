@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a051bc54.css",
+    "main.js": "/static/js/main.2c6b9a2d.js",
+    "static/media/lily-banse--unsplash.jpg": "/static/media/lily-banse--unsplash.6ef6db913df93a631506.jpg",
+    "static/media/cancel_icon.png": "/static/media/cancel_icon.dd2221f807b3bdf2cb4e.png",
+    "static/media/sliders-white.svg": "/static/media/sliders-white.8311f38f02b98c0170e8bc8e55b3d2ca.svg",
+    "index.html": "/index.html",
+    "static/media/search.svg": "/static/media/search.ac0d491acc37193e37e42a73de8bee76.svg",
+    "static/media/clock.svg": "/static/media/clock.a3874d2e3fed78662b365d7ffac99696.svg",
+    "main.a051bc54.css.map": "/static/css/main.a051bc54.css.map",
+    "main.2c6b9a2d.js.map": "/static/js/main.2c6b9a2d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a051bc54.css",
+    "static/js/main.2c6b9a2d.js"
+  ]
+}
