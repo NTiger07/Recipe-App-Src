@@ -42,14 +42,19 @@ export default function MainContent(props) {
     var app_id = id_array[index];
     var app_key = key_array[index];
     setIsLoading(true);
-    const query = document.getElementById("search_input");
-    var API_URL = `https://api.edamam.com/api/recipes/v2?type=public&q=${query.value}&app_id=${app_id}&app_key=${app_key}&time=1%2B${pms}`;
+    var API_URL = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${app_id}&app_key=${app_key}&time=1%2B${pms}`;
     const result = await Axios.get(API_URL).catch(() => {
       setIsLoading(false);
     });
     setRecipes(result.data.hits);
     setIsLoading(false);
   }
+  React.useEffect(
+    (query) => {
+      getRecipes(query);
+    },
+    [query]
+  );
 
   const mealElement = recipes.map((item) => {
     return (
@@ -79,8 +84,7 @@ export default function MainContent(props) {
       <HeadingCard
         getRecipes={getRecipes}
         isLoading={isLoading}
-        state={query}
-        setState={setQuery}
+        setQuery={setQuery}
         toggle={props.toggle}
         isHidden={props.isHidden}
       />

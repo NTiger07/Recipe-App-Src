@@ -17,8 +17,7 @@ export default function HeadingCard(props) {
             type="text"
             id="search_input"
             placeholder="Recipes, Ingredients, Trends"
-            value={props.state}
-            onChange={(e) => props.setState(e.target.value)}
+            onChange={(e) => props.setQuery(e.target.value)}
             onKeyUp={props.getRecipes}
           />
           <button id="searchBtn">
