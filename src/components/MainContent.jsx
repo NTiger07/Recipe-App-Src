@@ -7,7 +7,7 @@ import clockImg from "../assets/clock.svg";
 
 export default function MainContent(props) {
   const [recipes, setRecipes] = React.useState([]);
-  const [query, setQuery] = React.useState("");
+  const [query, setQuery] = React.useState("chicken");
   const [isLoading, setIsLoading] = React.useState(false);
   var pms = props.parameters;
 
